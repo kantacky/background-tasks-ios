@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  BackgroundTasks
+//  BackgroundTasksSample
 //
 //  Created by Kanta Oikawa on 2026/02/19.
 //

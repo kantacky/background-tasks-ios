@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		F1C275C52F46CD30007E6CA8 /* BackgroundTasks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundTasks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1C275C52F46CD30007E6CA8 /* BackgroundTasksSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BackgroundTasksSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		F11D810E2F46D5AA00DECECA /* Exceptions for "BackgroundTasksSample" folder in "BackgroundTasksSample" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = F1C275C42F46CD30007E6CA8 /* BackgroundTasksSample */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F1C275C72F46CD30007E6CA8 /* BackgroundTasks */ = {
+		F1C275C72F46CD30007E6CA8 /* BackgroundTasksSample */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = BackgroundTasks;
+			exceptions = (
+				F11D810E2F46D5AA00DECECA /* Exceptions for "BackgroundTasksSample" folder in "BackgroundTasksSample" target */,
+			);
+			path = BackgroundTasksSample;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +45,7 @@
 		F1C275BC2F46CD30007E6CA8 = {
 			isa = PBXGroup;
 			children = (
-				F1C275C72F46CD30007E6CA8 /* BackgroundTasks */,
+				F1C275C72F46CD30007E6CA8 /* BackgroundTasksSample */,
 				F1C275C62F46CD30007E6CA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +53,7 @@
 		F1C275C62F46CD30007E6CA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F1C275C52F46CD30007E6CA8 /* BackgroundTasks.app */,
+				F1C275C52F46CD30007E6CA8 /* BackgroundTasksSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F1C275C42F46CD30007E6CA8 /* BackgroundTasks */ = {
+		F1C275C42F46CD30007E6CA8 /* BackgroundTasksSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F1C275D02F46CD30007E6CA8 /* Build configuration list for PBXNativeTarget "BackgroundTasks" */;
+			buildConfigurationList = F1C275D02F46CD30007E6CA8 /* Build configuration list for PBXNativeTarget "BackgroundTasksSample" */;
 			buildPhases = (
 				F1C275C12F46CD30007E6CA8 /* Sources */,
 				F1C275C22F46CD30007E6CA8 /* Frameworks */,
@@ -61,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				F1C275C72F46CD30007E6CA8 /* BackgroundTasks */,
+				F1C275C72F46CD30007E6CA8 /* BackgroundTasksSample */,
 			);
-			name = BackgroundTasks;
+			name = BackgroundTasksSample;
 			packageProductDependencies = (
 			);
 			productName = BackgroundTasks;
-			productReference = F1C275C52F46CD30007E6CA8 /* BackgroundTasks.app */;
+			productReference = F1C275C52F46CD30007E6CA8 /* BackgroundTasksSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F1C275C02F46CD30007E6CA8 /* Build configuration list for PBXProject "BackgroundTasks" */;
+			buildConfigurationList = F1C275C02F46CD30007E6CA8 /* Build configuration list for PBXProject "BackgroundTasksSample" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F1C275C42F46CD30007E6CA8 /* BackgroundTasks */,
+				F1C275C42F46CD30007E6CA8 /* BackgroundTasksSample */,
 			);
 		};
 /* End PBXProject section */
@@ -256,6 +269,7 @@
 				DEVELOPMENT_TEAM = 4YP7SQBLYV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BackgroundTasksSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -266,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kantacky.BackgroundTasks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kantacky.BackgroundTasksSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -288,6 +302,7 @@
 				DEVELOPMENT_TEAM = 4YP7SQBLYV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BackgroundTasksSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,7 +313,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.kantacky.BackgroundTasks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.kantacky.BackgroundTasksSample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -313,7 +328,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F1C275C02F46CD30007E6CA8 /* Build configuration list for PBXProject "BackgroundTasks" */ = {
+		F1C275C02F46CD30007E6CA8 /* Build configuration list for PBXProject "BackgroundTasksSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1C275CE2F46CD30007E6CA8 /* Debug */,
@@ -322,7 +337,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F1C275D02F46CD30007E6CA8 /* Build configuration list for PBXNativeTarget "BackgroundTasks" */ = {
+		F1C275D02F46CD30007E6CA8 /* Build configuration list for PBXNativeTarget "BackgroundTasksSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F1C275D12F46CD30007E6CA8 /* Debug */,
