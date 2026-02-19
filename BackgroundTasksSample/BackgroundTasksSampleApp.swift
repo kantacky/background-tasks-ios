@@ -38,18 +38,12 @@ struct BackgroundTasksSampleApp: App {
     }
 
     private func notify() async {
+        let id = UUID().uuidString
         let content = UNMutableNotificationContent()
         content.title = "Title"
         content.body = "Message"
-        let trigger = UNTimeIntervalNotificationTrigger(
-            timeInterval: 1,
-            repeats: false
-        )
-        let request = UNNotificationRequest(
-            identifier: UUID().uuidString,
-            content: content,
-            trigger: trigger
-        )
+        content.sound = .default
+        let request = UNNotificationRequest(identifier: id, content: content, trigger: nil)
         do {
             try await UNUserNotificationCenter.current().add(request)
             print("Notified successfully")
