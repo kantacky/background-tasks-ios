@@ -10,7 +10,7 @@ import SwiftUI
 
 @main
 struct BackgroundTasksSampleApp: App {
-    private let backgroundTaskIdentifier = "com.kantacky.BackgroundTasksSample.refresh"
+    private let appRefreshTaskIdentifier = "com.kantacky.BackgroundTasksSample.refresh"
 
     var body: some Scene {
         WindowGroup {
@@ -20,14 +20,14 @@ struct BackgroundTasksSampleApp: App {
                     scheduleAppRefresh()
                 }
         }
-        .backgroundTask(.appRefresh(backgroundTaskIdentifier)) {
+        .backgroundTask(.appRefresh(appRefreshTaskIdentifier)) {
             await notify()
             await scheduleAppRefresh()
         }
     }
 
     private func scheduleAppRefresh() {
-        let request = BGAppRefreshTaskRequest(identifier: backgroundTaskIdentifier)
+        let request = BGAppRefreshTaskRequest(identifier: appRefreshTaskIdentifier)
         request.earliestBeginDate = Date(timeIntervalSinceNow: 15 * 60)
         do {
             try BGTaskScheduler.shared.submit(request)

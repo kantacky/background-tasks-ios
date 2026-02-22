@@ -4,13 +4,15 @@
 <dict>
 	<key>BGTaskSchedulerPermittedIdentifiers</key>
 	<array>
-		<string>com.kantacky.BackgroundTasksSample.refresh</string>
+		<string>com.kantacky.BackgroundTasksSample.*</string>
 	</array>
 	<key>NSUserNotificationsUsageDescription</key>
 	<string>This app uses push notification.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>
+		<string>processing</string>
+		<string>remote-notification</string>
 	</array>
 </dict>
 </plist>
